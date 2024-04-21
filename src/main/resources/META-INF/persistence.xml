@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
   <persistence-unit name="lab1PersistenceUnit">
-
-    <class>org.example.lab1.entities.PlayerCharacter</class>
+    <jta-data-source>PskDataSource</jta-data-source>
+    <properties>
+      <!--<property name="hibernate.hbm2ddl.auto" value="create"/>-->
+      <property name="hibernate.show_sql" value="true"/>
+      <property name="hibernate.hbm2ddl.auto" value="update"/>
+    </properties>
   </persistence-unit>
 </persistence>
