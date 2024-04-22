@@ -16,16 +16,20 @@ public class Campaign {
         this.id = id;
     }
 
-    private String length;
+    private int length;
 
 
-    public String getLength() {
+    public int getLength() {
         return length;
     }
 
-    public void setLength(String length) {
+    public void setLength(int length) {
         this.length = length;
     }
+
+    private String name;
+    public String getName() { return name; }
+    public void setName(String name) { this.name = name; }
 
     private Person dungeonMaster;
 

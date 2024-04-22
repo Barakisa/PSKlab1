@@ -10,21 +10,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="814df599-a109-4a51-a692-9c29dc8b4219" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab1/interceptors/LoggedInvocation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab1/interceptors/MethodLogger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab1/persistence/CampaignsDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab1/persistence/ClassesDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab1/persistence/MyBatisResources.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab1/persistence/PeopleDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab1/persistence/PlayerCharactersDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/MyBatisConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab1/rest/ApiConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab1/rest/PersonController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab1/rest/contracts/CampaignDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab1/rest/contracts/ClassesDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab1/rest/contracts/PersonDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab1/rest/contracts/PlayerCharacterDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/lab1/entities/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/lab1/entities/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/lab1/entities/PlayerCharacter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/lab1/entities/PlayerCharacter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/lab1/entities/Campaign.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/lab1/entities/Campaign.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,6 +85,8 @@
       <recent name="D:\Mokymai\VU MIF PS\6 semestras\PSK\lab1\src\main\webapp\WEB-INF" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.example.lab1.rest" />
+      <recent name="org.example.lab1.rest.contracts" />
       <recent name="org.example.lab1.persistence" />
     </key>
   </component>
@@ -188,7 +183,7 @@
       <workItem from="1713726665951" duration="3957000" />
       <workItem from="1713734807037" duration="1515000" />
       <workItem from="1713736339947" duration="7582000" />
-      <workItem from="1713746143464" duration="5730000" />
+      <workItem from="1713746143464" duration="14155000" />
     </task>
     <servers />
   </component>
