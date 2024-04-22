@@ -10,17 +10,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="814df599-a109-4a51-a692-9c29dc8b4219" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab1/entities/Campaign.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab1/entities/Classes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab1/entities/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab1/persistence/Resources.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/psk-ds.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab1/interceptors/LoggedInvocation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab1/interceptors/MethodLogger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab1/persistence/CampaignsDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab1/persistence/ClassesDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab1/persistence/MyBatisResources.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab1/persistence/PeopleDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab1/persistence/PlayerCharactersDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/MyBatisConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/lab1/entities/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/lab1/entities/Person.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/lab1/entities/PlayerCharacter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/lab1/entities/PlayerCharacter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.xhtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +63,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Mokymai/VU MIF PS/6 semestras/PSK/lab1/src/main/webapp/WEB-INF",
+    "last_opened_file_path": "D:/Mokymai/VU MIF PS/6 semestras/PSK/lab1/src/main/java/org/example/lab1",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -81,6 +85,7 @@
       <recent name="org.example.lab1.entities" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Mokymai\VU MIF PS\6 semestras\PSK\lab1\src\main\java\org\example\lab1" />
       <recent name="D:\Mokymai\VU MIF PS\6 semestras\PSK\lab1\src\main\webapp\WEB-INF" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -182,7 +187,8 @@
       <workItem from="1713726395614" duration="255000" />
       <workItem from="1713726665951" duration="3957000" />
       <workItem from="1713734807037" duration="1515000" />
-      <workItem from="1713736339947" duration="6000000" />
+      <workItem from="1713736339947" duration="7582000" />
+      <workItem from="1713746143464" duration="5730000" />
     </task>
     <servers />
   </component>

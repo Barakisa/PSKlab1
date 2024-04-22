@@ -49,4 +49,15 @@ public class PlayerCharacter {
     public void setChosenClasses(List<Classes> chosenClasses) {
         chosenClasses = chosenClasses;
     }
+
+    private Person person;
+
+    @ManyToOne
+    public Person getPerson() {
+        return person;
+    }
+
+    public void setPerson(Person person) {
+        this.person = person;
+    }
 }

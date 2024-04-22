@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="PSK_DB" uuid="5fe4f5c4-f84d-4092-be50-3bab1551408b">
+    <data-source source="LOCAL" name="PSK_DB" uuid="61bebfc9-d7f5-4925-b262-7941c9a3a613">
       <driver-ref>h2.unified</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.h2.Driver</jdbc-driver>

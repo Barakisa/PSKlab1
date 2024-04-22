@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <typeAliases>
+        <typeAlias type="org.example.lab1.mybatis.model.Campaign" alias="Campaign"/>
+        <typeAlias type="org.example.lab1.mybatis.model.Classes" alias="Classes"/>
+        <typeAlias type="org.example.lab1.mybatis.model.Person" alias="Person"/>
+        <typeAlias type="org.example.lab1.mybatis.model.PlayerCharacter" alias="PlayerCharacter"/>
+    </typeAliases>
+    <environments default="development">
+        <environment id="development">
+            <transactionManager type="MANAGED"/>
+            <dataSource type="JNDI">
+                <property name="data_source" value="PSK_DB"/>
+            </dataSource>
+        </environment>
+    </environments>
+    <mappers>
+        <mapper resource="mybatis.xml/CampaignMapper.xml"/>
+        <mapper resource="mybatis.xml/ClassesMapper.xml"/>
+        <mapper resource="mybatis.xml/PersonMapper.xml"/>
+        <mapper resource="mybatis.xml/PlayerCharacterMapper.xml"/>
+    </mappers>
+</configuration>

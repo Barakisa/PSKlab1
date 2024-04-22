@@ -41,12 +41,23 @@ public class Person {
 
     private List<Campaign> Campaigns;
 
-    @OneToMany(mappedBy = "dungeonMaster", fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "dungeonMaster")
     public List<Campaign> getCampaigns() {
         return Campaigns;
     }
 
     public void setCampaigns(List<Campaign> campaigns) {
         Campaigns = campaigns;
+    }
+
+    private List<PlayerCharacter> characters;
+
+    @OneToMany(mappedBy = "person", fetch = FetchType.EAGER)
+    public List<PlayerCharacter> getCharacters() {
+        return characters;
+    }
+
+    public void setCharacters(List<PlayerCharacter> character) {
+        this.characters = character;
     }
 }
