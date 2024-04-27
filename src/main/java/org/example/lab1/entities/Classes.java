@@ -2,12 +2,22 @@ package org.example.lab1.entities;
 
 import javax.persistence.*;
 import java.util.List;
+import java.util.Objects;
 
 @Entity
 public class Classes {
+    public Classes(){
+    }
 
     @Basic
     private String Title;
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    @ManyToMany(mappedBy = "chosenClasses")
+    private List<PlayerCharacter> Characters;
 
     public String getTitle() {
         return Title;
@@ -17,10 +27,6 @@ public class Classes {
         Title = title;
     }
 
-    @GeneratedValue
-    @Id
-    private Long id;
-
     public Long getId() {
         return id;
     }
@@ -29,14 +35,17 @@ public class Classes {
         this.id = id;
     }
 
-    @ManyToMany(mappedBy = "chosenClasses", fetch = FetchType.EAGER)
-    private List<PlayerCharacter> Characters;
-
     public List<PlayerCharacter> getCharacters() {
         return Characters;
     }
 
     public void setCharacters(List<PlayerCharacter> characters) {
         Characters = characters;
+    }
+
+    @Override
+    public int hashCode() {
+
+        return Objects.hash(Title);
     }
 }

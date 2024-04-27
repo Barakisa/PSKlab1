@@ -2,24 +2,37 @@ package org.example.lab1.entities;
 
 import javax.persistence.*;
 import java.util.List;
+import java.util.Objects;
 
 @Entity
 public class PlayerCharacter {
+    public PlayerCharacter(){
+    }
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    private String name;
+
+    private String race;
+
+    @ManyToMany
+    @JoinTable(
+            name = "CHARACTER_CLASSES",
+            joinColumns = @JoinColumn(name = "CLASS_ID"),
+            inverseJoinColumns = @JoinColumn(name = "CHARACTER_ID"))
+    private List<Classes> chosenClasses;
+
+
+    @ManyToOne
+    private Person person;
 
     public void setId(Long id) {
         this.id = id;
     }
-
-    @Id
-    @GeneratedValue
     public Long getId() {
         return id;
     }
-
-    private String name;
-
-    @Basic
     public String getName() {
         return name;
     }
@@ -28,9 +41,6 @@ public class PlayerCharacter {
         this.name = name;
     }
 
-    private String race;
-
-    @Basic
     public String getRace() {
         return race;
     }
@@ -39,25 +49,25 @@ public class PlayerCharacter {
         this.race = race;
     }
 
-    private List<Classes> chosenClasses;
-
-    @ManyToMany
     public List<Classes> getChosenClasses() {
         return chosenClasses;
     }
 
     public void setChosenClasses(List<Classes> chosenClasses) {
-        chosenClasses = chosenClasses;
+        this.chosenClasses = chosenClasses;
     }
 
-    private Person person;
-
-    @ManyToOne
     public Person getPerson() {
         return person;
     }
 
     public void setPerson(Person person) {
         this.person = person;
+    }
+
+    @Override
+    public int hashCode() {
+
+        return Objects.hash(name);
     }
 }

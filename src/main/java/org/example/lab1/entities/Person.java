@@ -2,62 +2,79 @@ package org.example.lab1.entities;
 
 import javax.persistence.*;
 import java.util.List;
+import java.util.Objects;
 
 @Entity
+@NamedQueries({
+        @NamedQuery(name = "Person.findAll", query = "select p from Person as p")
+})
+@Table(name = "PERSON")
 public class Person {
+    public Person(){
+    }
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @GeneratedValue
-    @Id
-    public Long getId() {
-        return id;
+    private String name;
+
+    private String surname;
+
+    @OneToMany(mappedBy = "dungeonMaster")
+    private List<Campaign> campaigns;
+
+    @OneToMany(mappedBy = "person", fetch = FetchType.EAGER)
+    private List<PlayerCharacter> characters;
+
+    public String toString(){
+        return "Person:: name: " + this.name + " | surname: " + this.surname;
     }
 
     public void setId(Long id) {
         this.id = id;
     }
 
-    private String Name;
+    public Long getId() {
+        return id;
+    }
 
-    @Basic(optional = false)
     public String getName() {
-        return Name;
+        return name;
     }
 
-    public void setName(String name) {
-        Name = name;
-    }
-
-    private String Surname;
-
-    @Basic(optional = false)
     public String getSurname() {
-        return Surname;
+        return surname;
     }
 
-    public void setSurname(String surname) {
-        Surname = surname;
-    }
-
-    private List<Campaign> Campaigns;
-
-    @OneToMany(mappedBy = "dungeonMaster")
     public List<Campaign> getCampaigns() {
-        return Campaigns;
+        return campaigns;
     }
 
-    public void setCampaigns(List<Campaign> campaigns) {
-        Campaigns = campaigns;
-    }
-
-    private List<PlayerCharacter> characters;
-
-    @OneToMany(mappedBy = "person", fetch = FetchType.EAGER)
     public List<PlayerCharacter> getCharacters() {
         return characters;
     }
 
-    public void setCharacters(List<PlayerCharacter> character) {
-        this.characters = character;
+    public void setName(String name) {
+        this.name = name;
     }
+
+    public void setSurname(String surname) {
+        this.surname = surname;
+    }
+
+    public void setCampaigns(List<Campaign> campaigns) {
+        this.campaigns = campaigns;
+    }
+
+    public void setCharacters(List<PlayerCharacter> characters) {
+        this.characters = characters;
+    }
+
+    @Override
+    public int hashCode() {
+
+        return Objects.hash(name);
+    }
+
 }

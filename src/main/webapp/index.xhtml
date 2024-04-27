@@ -6,15 +6,17 @@
 >
 <h:head/>
 <h:body>
-    <h2>My Campaigns:</h2>
+    <h2>Guild of Dungeon Masters:</h2>
     <ol>
-        <ui:repeat value="#{teams.allTeams}" var="team">
-            <li><h:link value="#{team.name}" outcome="players?teamId=#{team.id}" /></li>
+        <ui:repeat value="#{people.allPeople}" var="person">
+            <li><h:link value="#{person.name}" outcome="campaigns?personId=#{person.id}" /></li>
         </ui:repeat>
     </ol>
     <h:form>
-        <h:inputText value="#{teams.teamToCreate.name}" required="true" />
-        <h:commandButton value="Add new team" actionListener="#{teams.createTeam}" action="index?faces-redirect=true"/>
+        <h:inputText value="#{people.personToCreate.name}" required="true" />
+        <h:inputText value="#{people.personToCreate.surname}" required="false" />
+
+        <h:commandButton value="Add new person" actionListener="#{people.createPerson}" action="index?faces-redirect=true"/>
     </h:form>
 </h:body>
 </html>

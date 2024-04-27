@@ -5,6 +5,7 @@ import org.example.lab1.entities.Campaign;
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
 import javax.persistence.EntityManager;
+import java.util.List;
 
 @ApplicationScoped
 public class CampaignsDAO {

@@ -10,14 +10,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="814df599-a109-4a51-a692-9c29dc8b4219" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab1/rest/ApiConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab1/rest/PersonController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab1/rest/contracts/CampaignDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab1/rest/contracts/ClassesDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab1/rest/contracts/PersonDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab1/rest/contracts/PlayerCharacterDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab1/usecases/CampaignsForPerson.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab1/usecases/CharactersForPerson.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab1/usecases/ClassesForCharacter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab1/usecases/People.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/person.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/lab1/entities/Campaign.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/lab1/entities/Campaign.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/lab1/entities/Classes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/lab1/entities/Classes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/lab1/entities/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/lab1/entities/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/lab1/entities/PlayerCharacter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/lab1/entities/PlayerCharacter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/lab1/persistence/CampaignsDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/lab1/persistence/CampaignsDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/lab1/persistence/PeopleDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/lab1/persistence/PeopleDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/lab1/rest/PersonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/lab1/rest/PersonController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.xhtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +48,9 @@
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 3
@@ -65,6 +79,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "SQL Dialects",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -183,7 +198,11 @@
       <workItem from="1713726665951" duration="3957000" />
       <workItem from="1713734807037" duration="1515000" />
       <workItem from="1713736339947" duration="7582000" />
-      <workItem from="1713746143464" duration="14155000" />
+      <workItem from="1713746143464" duration="24021000" />
+      <workItem from="1713790544704" duration="1284000" />
+      <workItem from="1714056047363" duration="2851000" />
+      <workItem from="1714125322936" duration="6832000" />
+      <workItem from="1714214049484" duration="12032000" />
     </task>
     <servers />
   </component>
@@ -200,5 +219,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
