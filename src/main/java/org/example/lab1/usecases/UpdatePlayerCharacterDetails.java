@@ -41,7 +41,6 @@ public class UpdatePlayerCharacterDetails implements Serializable {
         Map<String, String> requestParameters =
                 FacesContext.getCurrentInstance().getExternalContext().getRequestParameterMap();
         Integer playerCharacterId = Integer.parseInt(requestParameters.get("playerCharacterId"));
-
         this.playerCharacter = playerCharactersDAO.findOne(playerCharacterId);
     }
 

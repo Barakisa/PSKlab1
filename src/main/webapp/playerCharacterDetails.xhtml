@@ -54,6 +54,12 @@
             <f:param name="playerCharacterId" value="#{updatePlayerCharacterDetails.playerCharacter.id}" />
         </h:commandButton>
     </h:form>
+    <h:form>
+        <h:outputText value="#{generateRandomExistingClass.classGenerationStatus}" />
+        <h:commandButton value="Pick a random class from the list?" action="#{generateRandomExistingClass.generateRandomClass()}">
+            <f:param name="playerCharacterId" value="#{updatePlayerCharacterDetails.playerCharacter.id}" />
+        </h:commandButton>
+    </h:form>
     <h:link outcome="index" value="Back to people page"/>
 </h:body>
 </html>
