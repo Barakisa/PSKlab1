@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:a="http://xmlns.jcp.org/jsf/passthrough"
+      xmlns:f="http://java.sun.com/jsf/core">
+<h:head/>
+<h:body>
+    <h2>Campaigns by #{campaignsForPerson.person.name}:</h2>
+    <ol>
+        <ui:repeat value="#{campaignsForPerson.person.campaigns}" var="campaign">
+            <li>
+                <h:link value="#{campaign.name}" outcome="campaignDetails?campaignId=#{campaign.id}" />
+            </li>
+        </ui:repeat>
+    </ol>
+    <h:form>
+        <h:inputText a:placeholder="name" value="#{campaignsForPerson.campaignToCreate.name}" required="true" />
+        <h:commandButton value="Create campaign for the person"
+                         actionListener="#{campaignsForPerson.createCampaign}"
+                         action="#{'personDetails?faces-redirect=true&amp;personId='.concat(campaignsForPerson.person.id)}">
+            <f:param name="personId" value="#{campaignsForPerson.person.id}" />
+        </h:commandButton>
+    </h:form>
+    <h2>Characters by #{playerCharactersForPerson.person.name}:</h2>
+    <ol>
+        <ui:repeat value="#{playerCharactersForPerson.person.characters}" var="pc">
+            <li>
+                <h:link value="#{pc.name} (#{pc.race})" outcome="playerCharacterDetails?playerCharacterId=#{pc.id}" />
+            </li>
+        </ui:repeat>
+    </ol>
+    <h:form>
+        <h:inputText a:placeholder="name" value="#{playerCharactersForPerson.playerCharacterToCreate.name}" required="true" />
+        <h:inputText a:placeholder="race" value="#{playerCharactersForPerson.playerCharacterToCreate.race}" required="true" />
+        <h:commandButton value="Add player character for the person"
+                         actionListener="#{playerCharactersForPerson.createPlayerCharacter}"
+                         action="#{'personDetails?faces-redirect=true&amp;personId='.concat(playerCharactersForPerson.person.id)}">
+            <f:param name="personId" value="#{playerCharactersForPerson.person.id}" />
+        </h:commandButton>
+    </h:form>
+    <h:link outcome="index" value="Back to people page"/>
+</h:body>
+</html>

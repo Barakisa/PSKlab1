@@ -4,16 +4,17 @@ import lombok.Getter;
 import lombok.Setter;
 import org.example.lab1.entities.Person;
 import org.example.lab1.persistence.PeopleDAO;
-import org.mybatis.cdi.Transactional;
+import javax.transaction.Transactional;
 
 import javax.annotation.PostConstruct;
 import javax.enterprise.inject.Model;
 import javax.inject.Inject;
+import java.io.Serializable;
 import java.util.List;
 import java.util.logging.Logger;
 
 @Model
-public class People {
+public class People implements Serializable {
     @Inject
     private PeopleDAO peopleDAO;
 

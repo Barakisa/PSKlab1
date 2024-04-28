@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:a="http://xmlns.jcp.org/jsf/passthrough"
+      xmlns:f="http://java.sun.com/jsf/core">
+<h:head/>
+<h:body>
+    <h2>#{updatePlayerCharacterDetails.playerCharacter.name}:</h2>
+    <h:form>
+        <h:outputText value="Name: "/>
+        <h:inputText a:placeholder="enter new name" value="#{updatePlayerCharacterDetails.playerCharacter.name}" required="true" />
+        <h:commandButton value="update"
+                         actionListener="#{updatePlayerCharacterDetails.updatePlayerCharacter}"
+                         action="#{'playerCharacterDetails?faces-redirect=true&amp;playerCharacterId='.concat(updatePlayerCharacterDetails.playerCharacter.id)}">
+            <f:param name="playerCharacterId" value="#{updatePlayerCharacterDetails.playerCharacter.id}" />
+        </h:commandButton>
+        <h:outputText value="Value was already modified by other user. If you want to override it - try again" rendered="#{param['error'] == 'optimistic-lock-exception'}" />
+    </h:form>
+    <h:form>
+        <h:outputText value="Classes: "/>
+        <ol>
+            <ui:repeat value="#{classesForCharacter.playerCharacter.chosenClasses}" var="class">
+                <li>
+                    <h:link value="#{class.title}" outcome="classDetails?classId=#{class.id}" />
+                    <h:commandButton value="Remove"
+                                     actionListener="#{updatePlayerCharacterDetails.removeClass}"
+                                     action="#{'playerCharacterDetails?faces-redirect=true&amp;playerCharacterId='.concat(updatePlayerCharacterDetails.playerCharacter.id).concat('&amp;classToRemoveId=').concat(class.id)}">
+                        <f:param name="playerCharacterId" value="#{classesForCharacter.playerCharacter.id}" />
+                        <f:param name="classToRemoveId" value="#{class.id}" />
+                    </h:commandButton>
+                </li>
+            </ui:repeat>
+        </ol>
+    </h:form>
+    <h:form>
+        <h:outputText value="Add class: "/>
+        <h:selectOneMenu value="#{updatePlayerCharacterDetails.classToAddId}">
+            <f:selectItems value="#{allClasses.allClasses}" var="class" itemValue="#{class.id}" itemLabel="#{class.title}" />
+        </h:selectOneMenu>
+        <h:commandButton value="Add"
+                         actionListener="#{updatePlayerCharacterDetails.addClass}"
+                         action="#{'playerCharacterDetails?faces-redirect=true&amp;playerCharacterId='.concat(updatePlayerCharacterDetails.playerCharacter.id)}">
+            <f:param name="playerCharacterId" value="#{updatePlayerCharacterDetails.playerCharacter.id}" />
+        </h:commandButton>
+    </h:form>
+    <h:form>
+        <h:outputText value="Create new class: "/>
+        <h:inputText a:placeholder="title" value="#{allClasses.classToCreate.title}" required="true" />
+        <h:commandButton value="Create new"
+                         actionListener="#{allClasses.createClass}"
+                         action="#{'playerCharacterDetails?faces-redirect=true&amp;playerCharacterId='.concat(updatePlayerCharacterDetails.playerCharacter.id)}">
+            <f:param name="playerCharacterId" value="#{updatePlayerCharacterDetails.playerCharacter.id}" />
+        </h:commandButton>
+    </h:form>
+    <h:link outcome="index" value="Back to people page"/>
+</h:body>
+</html>

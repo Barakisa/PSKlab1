@@ -12,5 +12,5 @@ public class PlayerCharactersDAO {
     private EntityManager em;
     public void persist(PlayerCharacter playerCharacter) { this.em.persist(playerCharacter);}
     public PlayerCharacter findOne(Integer id) { return em.find(PlayerCharacter.class, id);}
-    public PlayerCharacter update(PlayerCharacter classes) { return em.merge(classes);}
+    public PlayerCharacter update(PlayerCharacter playerCharacter) { return em.merge(playerCharacter);}
 }

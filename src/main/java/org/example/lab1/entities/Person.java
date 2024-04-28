@@ -1,5 +1,8 @@
 package org.example.lab1.entities;
 
+import lombok.Getter;
+import lombok.Setter;
+
 import javax.persistence.*;
 import java.util.List;
 import java.util.Objects;
@@ -9,13 +12,14 @@ import java.util.Objects;
         @NamedQuery(name = "Person.findAll", query = "select p from Person as p")
 })
 @Table(name = "PERSON")
+@Getter @Setter
 public class Person {
     public Person(){
     }
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Integer id;
 
     private String name;
 
@@ -29,46 +33,6 @@ public class Person {
 
     public String toString(){
         return "Person:: name: " + this.name + " | surname: " + this.surname;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public String getSurname() {
-        return surname;
-    }
-
-    public List<Campaign> getCampaigns() {
-        return campaigns;
-    }
-
-    public List<PlayerCharacter> getCharacters() {
-        return characters;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setSurname(String surname) {
-        this.surname = surname;
-    }
-
-    public void setCampaigns(List<Campaign> campaigns) {
-        this.campaigns = campaigns;
-    }
-
-    public void setCharacters(List<PlayerCharacter> characters) {
-        this.characters = characters;
     }
 
     @Override

@@ -10,25 +10,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="814df599-a109-4a51-a692-9c29dc8b4219" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab1/usecases/CampaignsForPerson.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab1/usecases/CharactersForPerson.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab1/usecases/ClassesForCharacter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab1/usecases/People.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/person.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab1/usecases/AllClasses.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab1/usecases/UpdateCampaignDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab1/usecases/UpdatePlayerCharacterDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/campaignDetails.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/classDetails.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/personDetails.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/playerCharacterDetails.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8fcfb166-65c8-4a7d-b863-8b49e99599b7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8fcfb166-65c8-4a7d-b863-8b49e99599b7.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/lab1/entities/Campaign.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/lab1/entities/Campaign.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/lab1/entities/Classes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/lab1/entities/Classes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/lab1/entities/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/lab1/entities/Person.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/lab1/entities/PlayerCharacter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/lab1/entities/PlayerCharacter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/lab1/persistence/CampaignsDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/lab1/persistence/CampaignsDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/lab1/persistence/ClassesDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/lab1/persistence/ClassesDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/lab1/persistence/PeopleDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/lab1/persistence/PeopleDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/lab1/rest/PersonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/lab1/rest/PersonController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/lab1/persistence/PlayerCharactersDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/lab1/persistence/PlayerCharactersDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/lab1/usecases/CampaignsForPerson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/lab1/usecases/CampaignsForPerson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/lab1/usecases/CharactersForPerson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/lab1/usecases/PlayerCharactersForPerson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/lab1/usecases/ClassesForCharacter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/lab1/usecases/ClassesForCharacter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/lab1/usecases/People.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/lab1/usecases/People.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/person.xhtml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +73,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Mokymai/VU MIF PS/6 semestras/PSK/lab1/src/main/java/org/example/lab1",
+    "last_opened_file_path": "D:/Mokymai/VU MIF PS/6 semestras/PSK/lab1/src/main/webapp",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -93,6 +96,7 @@
       <recent name="org.example.lab1.entities" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Mokymai\VU MIF PS\6 semestras\PSK\lab1\src\main\webapp" />
       <recent name="D:\Mokymai\VU MIF PS\6 semestras\PSK\lab1\src\main\java\org\example\lab1" />
       <recent name="D:\Mokymai\VU MIF PS\6 semestras\PSK\lab1\src\main\webapp\WEB-INF" />
     </key>
@@ -100,6 +104,7 @@
       <recent name="D:\Mokymai\VU MIF PS\6 semestras\PSK\lab1\src\main\webapp\WEB-INF" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.example.lab1.usecases" />
       <recent name="org.example.lab1.rest" />
       <recent name="org.example.lab1.rest.contracts" />
       <recent name="org.example.lab1.persistence" />
@@ -202,7 +207,7 @@
       <workItem from="1713790544704" duration="1284000" />
       <workItem from="1714056047363" duration="2851000" />
       <workItem from="1714125322936" duration="6832000" />
-      <workItem from="1714214049484" duration="12032000" />
+      <workItem from="1714214049484" duration="42929000" />
     </task>
     <servers />
   </component>

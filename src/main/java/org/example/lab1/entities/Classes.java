@@ -1,47 +1,32 @@
 package org.example.lab1.entities;
 
+import lombok.Getter;
+import lombok.Setter;
+
+import javax.naming.Name;
 import javax.persistence.*;
 import java.util.List;
 import java.util.Objects;
 
 @Entity
+@NamedQueries({
+        @NamedQuery(name = "Classes.findAll", query = "select c from Classes as c")
+})
+@Getter @Setter
 public class Classes {
     public Classes(){
     }
 
-    @Basic
     private String Title;
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Integer id;
+
 
     @ManyToMany(mappedBy = "chosenClasses")
     private List<PlayerCharacter> Characters;
 
-    public String getTitle() {
-        return Title;
-    }
-
-    public void setTitle(String title) {
-        Title = title;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public List<PlayerCharacter> getCharacters() {
-        return Characters;
-    }
-
-    public void setCharacters(List<PlayerCharacter> characters) {
-        Characters = characters;
-    }
 
     @Override
     public int hashCode() {
