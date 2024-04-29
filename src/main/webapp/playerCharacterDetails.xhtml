@@ -23,7 +23,7 @@
         <ol>
             <ui:repeat value="#{classesForCharacter.playerCharacter.chosenClasses}" var="class">
                 <li>
-                    <h:link value="#{class.title}" outcome="classDetails?classId=#{class.id}" />
+                    <h:link value="#{class.title} #{class.characters.size()}" outcome="classDetails?classId=#{class.id}" />
                     <h:commandButton value="Remove"
                                      actionListener="#{updatePlayerCharacterDetails.removeClass}"
                                      action="#{'playerCharacterDetails?faces-redirect=true&amp;playerCharacterId='.concat(updatePlayerCharacterDetails.playerCharacter.id).concat('&amp;classToRemoveId=').concat(class.id)}">

@@ -168,215 +168,175 @@
     <schema id="161" parent="2" name="INFORMATION_SCHEMA"/>
     <schema id="162" parent="2" name="PUBLIC">
       <Current>1</Current>
-      <LastIntrospectionLocalTimestamp>2024-04-28.22:36:17</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2024-04-29.15:48:08</LastIntrospectionLocalTimestamp>
     </schema>
     <user id="163" parent="2" name="SA">
       <Admin>1</Admin>
     </user>
-    <sequence id="164" parent="162" name="SYSTEM_SEQUENCE_1A74A342_5221_4267_912C_8736A482E311">
+    <sequence id="164" parent="162" name="SYSTEM_SEQUENCE_51175963_15F7_43C6_8E7D_257537207BA0">
       <Comment>#1</Comment>
       <DasType>BIGINT|0s</DasType>
       <NameSurrogate>1</NameSurrogate>
-      <SequenceIdentity>1(4)</SequenceIdentity>
+      <SequenceIdentity>1(1)</SequenceIdentity>
     </sequence>
-    <sequence id="165" parent="162" name="SYSTEM_SEQUENCE_AF569C69_B354_4FAA_BB72_B79CFA2BADDD">
+    <sequence id="165" parent="162" name="SYSTEM_SEQUENCE_1C2A6BA0_88EA_423F_B762_676CC771089E">
       <Comment>#2</Comment>
       <DasType>BIGINT|0s</DasType>
       <NameSurrogate>1</NameSurrogate>
-      <SequenceIdentity>1(10)</SequenceIdentity>
+      <SequenceIdentity>1(1)</SequenceIdentity>
     </sequence>
-    <sequence id="166" parent="162" name="SYSTEM_SEQUENCE_BC5A65AF_B8E5_41A3_8487_966E93F8B9DE">
+    <sequence id="166" parent="162" name="SYSTEM_SEQUENCE_D044C050_9E42_44A9_A0F6_D592B44B4E81">
       <Comment>#3</Comment>
       <DasType>BIGINT|0s</DasType>
       <NameSurrogate>1</NameSurrogate>
-      <SequenceIdentity>1(4)</SequenceIdentity>
+      <SequenceIdentity>1(1)</SequenceIdentity>
     </sequence>
-    <sequence id="167" parent="162" name="SYSTEM_SEQUENCE_BB65F907_D69D_433B_B49B_914557D2B949">
+    <sequence id="167" parent="162" name="SYSTEM_SEQUENCE_FBC8AA98_BFF4_4E5D_A23F_FC5EAD57D815">
       <Comment>#4</Comment>
       <DasType>BIGINT|0s</DasType>
       <NameSurrogate>1</NameSurrogate>
-      <SequenceIdentity>1(5)</SequenceIdentity>
+      <SequenceIdentity>1(1)</SequenceIdentity>
     </sequence>
     <table id="168" parent="162" name="CAMPAIGN"/>
-    <table id="169" parent="162" name="CHARACTER_CLASSES"/>
-    <table id="170" parent="162" name="CLASSES"/>
-    <table id="171" parent="162" name="PERSON"/>
-    <table id="172" parent="162" name="PLAYERCHARACTER"/>
-    <table id="173" parent="162" name="PLAYERCHARACTER_CLASSES"/>
-    <column id="174" parent="168" name="ID">
+    <table id="169" parent="162" name="CLASSES"/>
+    <table id="170" parent="162" name="PERSON"/>
+    <table id="171" parent="162" name="PLAYERCHARACTER"/>
+    <table id="172" parent="162" name="PLAYERCHARACTER_CLASSES"/>
+    <column id="173" parent="168" name="ID">
       <ColumnKind>generated-stored</ColumnKind>
       <DasType>INTEGER|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <SequenceName>SYSTEM_SEQUENCE_1A74A342_5221_4267_912C_8736A482E311</SequenceName>
+      <SequenceName>SYSTEM_SEQUENCE_51175963_15F7_43C6_8E7D_257537207BA0</SequenceName>
     </column>
-    <column id="175" parent="168" name="LENGTH">
+    <column id="174" parent="168" name="LENGTH">
       <DasType>INTEGER|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="176" parent="168" name="NAME">
+    <column id="175" parent="168" name="NAME">
       <DasType>VARCHAR(50)|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="177" parent="168" name="DUNGEON_MASTER_ID">
+    <column id="176" parent="168" name="DUNGEON_MASTER_ID">
       <DasType>INTEGER|0s</DasType>
       <Position>4</Position>
     </column>
-    <foreign-key id="178" parent="168" name="FKLGUMI6QLAP67X4K4LCLMDF0GS">
+    <foreign-key id="177" parent="168" name="FKLGUMI6QLAP67X4K4LCLMDF0GS">
       <ColNames>DUNGEON_MASTER_ID</ColNames>
       <OnDelete>restrict</OnDelete>
       <OnUpdate>restrict</OnUpdate>
       <RefKeyIndexName>PRIMARY_KEY_8</RefKeyIndexName>
       <RefTableName>PERSON</RefTableName>
     </foreign-key>
-    <index id="179" parent="168" name="PRIMARY_KEY_2">
+    <index id="178" parent="168" name="PRIMARY_KEY_2">
       <ColNames>ID</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Unique>1</Unique>
     </index>
-    <index id="180" parent="168" name="FKLGUMI6QLAP67X4K4LCLMDF0GS_INDEX_2">
+    <index id="179" parent="168" name="FKLGUMI6QLAP67X4K4LCLMDF0GS_INDEX_2">
       <ColNames>DUNGEON_MASTER_ID</ColNames>
       <NameSurrogate>1</NameSurrogate>
     </index>
-    <column id="181" parent="169" name="CLASS_ID">
-      <DasType>INTEGER|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-    </column>
-    <column id="182" parent="169" name="CHARACTER_ID">
-      <DasType>INTEGER|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>2</Position>
-    </column>
-    <foreign-key id="183" parent="169" name="FKI5E0QYS9CVJHBW37UGYEN5M4F">
-      <ColNames>CLASS_ID</ColNames>
-      <OnDelete>restrict</OnDelete>
-      <OnUpdate>restrict</OnUpdate>
-      <RefKeyIndexName>PRIMARY_KEY_5</RefKeyIndexName>
-      <RefTableName>CLASSES</RefTableName>
-    </foreign-key>
-    <foreign-key id="184" parent="169" name="FKJMEV4YVU24P65UXLIPKYOQGDX">
-      <ColNames>CLASS_ID</ColNames>
-      <OnDelete>restrict</OnDelete>
-      <OnUpdate>restrict</OnUpdate>
-      <RefKeyIndexName>PRIMARY_KEY_C</RefKeyIndexName>
-      <RefTableName>PLAYERCHARACTER</RefTableName>
-    </foreign-key>
-    <foreign-key id="185" parent="169" name="FKG5VDF6AI88E5FMFQRUB7DUKGI">
-      <ColNames>CHARACTER_ID</ColNames>
-      <OnDelete>restrict</OnDelete>
-      <OnUpdate>restrict</OnUpdate>
-      <RefKeyIndexName>PRIMARY_KEY_5</RefKeyIndexName>
-      <RefTableName>CLASSES</RefTableName>
-    </foreign-key>
-    <index id="186" parent="169" name="FKJMEV4YVU24P65UXLIPKYOQGDX_INDEX_6">
-      <ColNames>CLASS_ID</ColNames>
-      <NameSurrogate>1</NameSurrogate>
-    </index>
-    <index id="187" parent="169" name="FKG5VDF6AI88E5FMFQRUB7DUKGI_INDEX_6">
-      <ColNames>CHARACTER_ID</ColNames>
-      <NameSurrogate>1</NameSurrogate>
-    </index>
-    <column id="188" parent="170" name="ID">
+    <column id="180" parent="169" name="ID">
       <ColumnKind>generated-stored</ColumnKind>
       <DasType>INTEGER|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <SequenceName>SYSTEM_SEQUENCE_AF569C69_B354_4FAA_BB72_B79CFA2BADDD</SequenceName>
+      <SequenceName>SYSTEM_SEQUENCE_1C2A6BA0_88EA_423F_B762_676CC771089E</SequenceName>
     </column>
-    <column id="189" parent="170" name="TITLE">
+    <column id="181" parent="169" name="TITLE">
       <DasType>VARCHAR(255)|0s</DasType>
       <Position>2</Position>
     </column>
-    <index id="190" parent="170" name="PRIMARY_KEY_5">
+    <index id="182" parent="169" name="PRIMARY_KEY_5">
       <ColNames>ID</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Unique>1</Unique>
     </index>
-    <column id="191" parent="171" name="ID">
+    <column id="183" parent="170" name="ID">
       <ColumnKind>generated-stored</ColumnKind>
       <DasType>INTEGER|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <SequenceName>SYSTEM_SEQUENCE_BC5A65AF_B8E5_41A3_8487_966E93F8B9DE</SequenceName>
+      <SequenceName>SYSTEM_SEQUENCE_D044C050_9E42_44A9_A0F6_D592B44B4E81</SequenceName>
     </column>
-    <column id="192" parent="171" name="NAME">
+    <column id="184" parent="170" name="NAME">
       <DasType>VARCHAR(255)|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="193" parent="171" name="SURNAME">
+    <column id="185" parent="170" name="SURNAME">
       <DasType>VARCHAR(255)|0s</DasType>
       <Position>3</Position>
     </column>
-    <index id="194" parent="171" name="PRIMARY_KEY_8">
+    <index id="186" parent="170" name="PRIMARY_KEY_8">
       <ColNames>ID</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Unique>1</Unique>
     </index>
-    <column id="195" parent="172" name="ID">
+    <column id="187" parent="171" name="ID">
       <ColumnKind>generated-stored</ColumnKind>
       <DasType>INTEGER|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <SequenceName>SYSTEM_SEQUENCE_BB65F907_D69D_433B_B49B_914557D2B949</SequenceName>
+      <SequenceName>SYSTEM_SEQUENCE_FBC8AA98_BFF4_4E5D_A23F_FC5EAD57D815</SequenceName>
     </column>
-    <column id="196" parent="172" name="NAME">
+    <column id="188" parent="171" name="NAME">
       <DasType>VARCHAR(255)|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="197" parent="172" name="RACE">
+    <column id="189" parent="171" name="RACE">
       <DasType>VARCHAR(255)|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="198" parent="172" name="PERSON_ID">
+    <column id="190" parent="171" name="PERSON_ID">
       <DasType>INTEGER|0s</DasType>
       <Position>4</Position>
     </column>
-    <foreign-key id="199" parent="172" name="FKRGIT3GHKVT3F5EQO87J705852">
+    <foreign-key id="191" parent="171" name="FKRGIT3GHKVT3F5EQO87J705852">
       <ColNames>PERSON_ID</ColNames>
       <OnDelete>restrict</OnDelete>
       <OnUpdate>restrict</OnUpdate>
       <RefKeyIndexName>PRIMARY_KEY_8</RefKeyIndexName>
       <RefTableName>PERSON</RefTableName>
     </foreign-key>
-    <index id="200" parent="172" name="PRIMARY_KEY_C">
+    <index id="192" parent="171" name="PRIMARY_KEY_C">
       <ColNames>ID</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Unique>1</Unique>
     </index>
-    <index id="201" parent="172" name="FKRGIT3GHKVT3F5EQO87J705852_INDEX_C">
+    <index id="193" parent="171" name="FKRGIT3GHKVT3F5EQO87J705852_INDEX_C">
       <ColNames>PERSON_ID</ColNames>
       <NameSurrogate>1</NameSurrogate>
     </index>
-    <column id="202" parent="173" name="CHARACTERS_ID">
+    <column id="194" parent="172" name="CHARACTERS_ID">
       <DasType>INTEGER|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="203" parent="173" name="CHOSENCLASSES_ID">
+    <column id="195" parent="172" name="CHOSENCLASSES_ID">
       <DasType>INTEGER|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <foreign-key id="204" parent="173" name="FKRNTKHPNON8SV3A6KLJO7DKTN5">
+    <foreign-key id="196" parent="172" name="FKRNTKHPNON8SV3A6KLJO7DKTN5">
       <ColNames>CHARACTERS_ID</ColNames>
       <OnDelete>restrict</OnDelete>
       <OnUpdate>restrict</OnUpdate>
       <RefKeyIndexName>PRIMARY_KEY_C</RefKeyIndexName>
       <RefTableName>PLAYERCHARACTER</RefTableName>
     </foreign-key>
-    <foreign-key id="205" parent="173" name="FK1EWM7V0URDT82UK8K8NWTY16W">
+    <foreign-key id="197" parent="172" name="FK1EWM7V0URDT82UK8K8NWTY16W">
       <ColNames>CHOSENCLASSES_ID</ColNames>
       <OnDelete>restrict</OnDelete>
       <OnUpdate>restrict</OnUpdate>
       <RefKeyIndexName>PRIMARY_KEY_5</RefKeyIndexName>
       <RefTableName>CLASSES</RefTableName>
     </foreign-key>
-    <index id="206" parent="173" name="FKRNTKHPNON8SV3A6KLJO7DKTN5_INDEX_A">
+    <index id="198" parent="172" name="FKRNTKHPNON8SV3A6KLJO7DKTN5_INDEX_A">
       <ColNames>CHARACTERS_ID</ColNames>
       <NameSurrogate>1</NameSurrogate>
     </index>
-    <index id="207" parent="173" name="FK1EWM7V0URDT82UK8K8NWTY16W_INDEX_A">
+    <index id="199" parent="172" name="FK1EWM7V0URDT82UK8K8NWTY16W_INDEX_A">
       <ColNames>CHOSENCLASSES_ID</ColNames>
       <NameSurrogate>1</NameSurrogate>
     </index>
