@@ -168,7 +168,7 @@
     <schema id="161" parent="2" name="INFORMATION_SCHEMA"/>
     <schema id="162" parent="2" name="PUBLIC">
       <Current>1</Current>
-      <LastIntrospectionLocalTimestamp>2024-04-28.16:42:15</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2024-04-28.22:36:17</LastIntrospectionLocalTimestamp>
     </schema>
     <user id="163" parent="2" name="SA">
       <Admin>1</Admin>
@@ -183,7 +183,7 @@
       <Comment>#2</Comment>
       <DasType>BIGINT|0s</DasType>
       <NameSurrogate>1</NameSurrogate>
-      <SequenceIdentity>1(6)</SequenceIdentity>
+      <SequenceIdentity>1(10)</SequenceIdentity>
     </sequence>
     <sequence id="166" parent="162" name="SYSTEM_SEQUENCE_BC5A65AF_B8E5_41A3_8487_966E93F8B9DE">
       <Comment>#3</Comment>

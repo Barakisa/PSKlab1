@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:a="http://xmlns.jcp.org/jsf/passthrough"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+>
+<h:head/>
+<h:body>
+    <h2>Guild of Dungeon Masters:</h2>
+    <ol>
+        <ui:repeat value="#{peopleMyBatis.allPeople}" var="person">
+            <li><h:link value="#{person.name}" outcome="personDetails?personId=#{person.id}" /></li>
+        </ui:repeat>
+    </ol>
+    <h:form>
+        <h:inputText a:placeholder="name"    value="#{peopleMyBatis.personToCreate.name}"    required="true" />
+        <h:inputText a:placeholder="surname" value="#{peopleMyBatis.personToCreate.surname}" required="false" />
+        <h:commandButton value="Add new person" actionListener="#{peopleMyBatis.createPerson}" action="mybatis/index?faces-redirect=true"/>
+    </h:form>
+    <h:link outcome="/index" value="/index"/>
+</h:body>
+</html>

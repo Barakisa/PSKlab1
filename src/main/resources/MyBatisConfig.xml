@@ -7,20 +7,20 @@
         <typeAlias type="org.example.lab1.mybatis.model.Campaign" alias="Campaign"/>
         <typeAlias type="org.example.lab1.mybatis.model.Classes" alias="Classes"/>
         <typeAlias type="org.example.lab1.mybatis.model.Person" alias="Person"/>
-        <typeAlias type="org.example.lab1.mybatis.model.PlayerCharacter" alias="PlayerCharacter"/>
+        <typeAlias type="org.example.lab1.mybatis.model.Playercharacter" alias="Playercharacter"/>
     </typeAliases>
     <environments default="development">
         <environment id="development">
             <transactionManager type="MANAGED"/>
             <dataSource type="JNDI">
-                <property name="data_source" value="PSK_DB"/>
+                <property name="data_source" value="PskDataSource"/>
             </dataSource>
         </environment>
     </environments>
     <mappers>
-        <mapper resource="mybatis.xml/CampaignMapper.xml"/>
-        <mapper resource="mybatis.xml/ClassesMapper.xml"/>
-        <mapper resource="mybatis.xml/PersonMapper.xml"/>
-        <mapper resource="mybatis.xml/PlayerCharacterMapper.xml"/>
+        <mapper resource="mybatis/xml/CampaignMapper.xml"/>
+        <mapper resource="mybatis/xml/ClassesMapper.xml"/>
+        <mapper resource="mybatis/xml/PersonMapper.xml"/>
+        <mapper resource="mybatis/xml/PlayercharacterMapper.xml"/>
     </mappers>
 </configuration>
